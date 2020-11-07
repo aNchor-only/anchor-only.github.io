@@ -1,0 +1,18 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>aNchor</title>
+        <link>/</link>
+        <description>This is My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>anchor-only@outlook.kr (anchor)</managingEditor>
+            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Sat, 07 Nov 2020 12:02:22 &#43;0900</lastBuildDate>
+            <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>First.md</title>
+    <link>/first/</link>
+    <pubDate>Sat, 07 Nov 2020 12:02:22 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>/first/</guid>
+    <description><![CDATA[만들었다 히히
+]]></description>
+</item></channel>
+</rss>
