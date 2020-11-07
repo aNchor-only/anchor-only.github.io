@@ -2,7 +2,7 @@
     <channel>
         <title>aNchor</title>
         <link>/</link>
-        <description>This is My New Hugo Site</description>
+        <description>나 혼자 보는 개인 사이트</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>anchor-only@outlook.kr (anchor)</managingEditor>
             <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Sat, 07 Nov 2020 12:02:22 &#43;0900</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
