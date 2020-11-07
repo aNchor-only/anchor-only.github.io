@@ -38,7 +38,7 @@ https://www.archlinux.org/packages/community/x86_64/go/
 
 맥이나 윈도우는
 
- ![download](./img/downloads.png))
+ ![download](C:\hugo\content\posts\img\downloads.png))
 
 
 
@@ -85,11 +85,11 @@ https://medium.com/@jimkang/install-go-on-mac-with-homebrew-5fa421fc55f5
 
 윈도우
 
-![environmentvariable](./img/windowsenvironmentsvariable.png)
+![environmentvariable](C:\hugo\content\posts\img\windowsenvironmentsvariable.png)
 
-![variables](./img/variables.png)
+![variables](C:\hugo\content\posts\img\variables.png)
 
-![gopath](./img/gopath.png)
+![gopath](C:\hugo\content\posts\img\gopath.png)
 
 Path 에 Go 를 설치한 폴더가 들어있으면 된다.
 
@@ -103,7 +103,7 @@ Go 는 Go 의 Path 가 설치된 곳에서만 작동한다. 원하는 곳에 폴
 
 
 
-Go 는 Node.js 나 Python 같이 모듈이나 패키지를 다운받을 수 있는곳이 제한적이다. npm 이나 pypi 등등. 하지만 Go 에는 그런게 없다. 그렇기 때문에 코드를 다운받을, 업로드 할 도메인으로 깔끔하게 정리한다.
+Go 는 Node.js 나 Python 같이 모듈이나 패키지를 다운받을 수 있는곳이 제한적이다. npm 이나 pypi 등등. Go 는 그런거 없다. 그렇기 때문에 코드를 다운받을, 업로드 할 도메인으로 깔끔하게 정리한다.
 
 <br>
 
