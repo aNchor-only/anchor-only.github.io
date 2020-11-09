@@ -19,12 +19,4 @@
 
 - [anchor-only@outlook.kr](mailto:anchor-only@outlook.kr)
 
-### 디스코드
-
-
-
-
-
-
-
 {{</typeit>}}
