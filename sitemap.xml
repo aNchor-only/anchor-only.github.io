@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>/about/</loc><lastmod>2020-11-09T13:50:26&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/</loc><lastmod>2020-11-07T22:18:51&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/go-installation/</loc><lastmod>2020-11-07T22:18:51&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/posts/</loc><lastmod>2020-11-07T22:18:51&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
