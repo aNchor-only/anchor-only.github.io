@@ -5,34 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Introduction - aNchor</title><meta name="Description" content="나 혼자 보는 개인 사이트"><meta property="og:title" content="Introduction" />
-<meta property="og:description" content="영상   이 글은 나 혼자 보려고 노마드코더의 GO 강의를 문서화 시킨 것이다. 나중에 까먹거나 할때 즈음에 다시 훑어보면서 되짚어볼 생각이다.
-영상에서는 다른 언어 부터 배우고 오는게 좋다고 했지만, 나는 거의 안배우고 바로 GO로 들어갔다.
-모아보기 링크" />
+        <title>Packages and Imports - aNchor</title><meta name="Description" content="나 혼자 보는 개인 사이트"><meta property="og:title" content="Packages and Imports" />
+<meta property="og:description" content="영상   패키지 main.go 에서 Hello World 를 출력할 때 fmt.Println 으로 출력했었다. fmt 는 format 을 위한 패키지다. 그런데 왜 Println 은 첫글자가 대문자일까?
+Import 파이썬, 자바, 자바스크립트 등에서는 무언가를 import 할때 맨 위에
+import 000 from 000 형식으로 import 해온다. 또 node.js 나 자바스크립트 같은것에서는 모듈을 export 해야한다.
+Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 시작하면 된다.
+또 import 받는 쪽에서도 첫글자가 대문자로 인식된다.
+그러니까 첫글자가 대문자인 function 들은 다른곳에서 import 된거라고 보면 된다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/go-introduction/" />
+<meta property="og:url" content="/packagesandimports/" />
 <meta property="og:image" content="/"/>
-<meta property="article:published_time" content="2020-11-07T22:11:13+09:00" />
-<meta property="article:modified_time" content="2020-11-07T22:11:13+09:00" />
+<meta property="article:published_time" content="2020-11-11T11:57:06+09:00" />
+<meta property="article:modified_time" content="2020-11-11T11:57:06+09:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/"/>
 
-<meta name="twitter:title" content="Introduction"/>
-<meta name="twitter:description" content="영상   이 글은 나 혼자 보려고 노마드코더의 GO 강의를 문서화 시킨 것이다. 나중에 까먹거나 할때 즈음에 다시 훑어보면서 되짚어볼 생각이다.
-영상에서는 다른 언어 부터 배우고 오는게 좋다고 했지만, 나는 거의 안배우고 바로 GO로 들어갔다.
-모아보기 링크"/>
+<meta name="twitter:title" content="Packages and Imports"/>
+<meta name="twitter:description" content="영상   패키지 main.go 에서 Hello World 를 출력할 때 fmt.Println 으로 출력했었다. fmt 는 format 을 위한 패키지다. 그런데 왜 Println 은 첫글자가 대문자일까?
+Import 파이썬, 자바, 자바스크립트 등에서는 무언가를 import 할때 맨 위에
+import 000 from 000 형식으로 import 해온다. 또 node.js 나 자바스크립트 같은것에서는 모듈을 export 해야한다.
+Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 시작하면 된다.
+또 import 받는 쪽에서도 첫글자가 대문자로 인식된다.
+그러니까 첫글자가 대문자인 function 들은 다른곳에서 import 된거라고 보면 된다."/>
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/go-introduction/" /><link rel="prev" href="/first/" /><link rel="next" href="/go-installation/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/packagesandimports/" /><link rel="prev" href="/go-helloworld/" /><link rel="next" href="/variableandconstants/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Introduction",
+        "headline": "Packages and Imports",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/go-introduction\/"
-        },"genre": "posts","wordcount":  36 ,
-        "url": "\/go-introduction\/","datePublished": "2020-11-07T22:11:13+09:00","dateModified": "2020-11-07T22:11:13+09:00","publisher": {
+            "@id": "\/packagesandimports\/"
+        },"genre": "posts","wordcount":  77 ,
+        "url": "\/packagesandimports\/","datePublished": "2020-11-11T11:57:06+09:00","dateModified": "2020-11-11T11:57:06+09:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -106,9 +112,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Introduction</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Packages and Imports</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/aNchor-only" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>anchor</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-07">2020-11-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;36 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-11">2020-11-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;77 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -118,28 +124,36 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#영상">영상</a></li>
+    <li><a href="#패키지">패키지</a></li>
+    <li><a href="#import">Import</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="영상">영상</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube-nocookie.com/embed/jIwtEXBmt38" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/1xe2UIZ3gx0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>이 글은 나 혼자 보려고 노마드코더의 GO 강의를 문서화 시킨 것이다. 나중에 까먹거나 할때 즈음에 다시 훑어보면서 되짚어볼 생각이다.</p>
-<p>영상에서는 다른 언어 부터 배우고 오는게 좋다고 했지만, 나는 거의 안배우고 바로 GO로 들어갔다.</p>
-<p><a href="https://nomadcoders.co/go-for-beginners/lectures/1712" target="_blank" rel="noopener noreffer">모아보기 링크</a></p>
+<h2 id="패키지">패키지</h2>
+<p>main.go 에서 Hello World 를 출력할 때 <code>fmt.Println</code> 으로 출력했었다. fmt 는 format 을 위한 패키지다. 그런데 왜 Println 은 첫글자가 대문자일까?</p>
+<h2 id="import">Import</h2>
+<p>파이썬, 자바, 자바스크립트 등에서는 무언가를 import 할때 맨 위에</p>
+<p><code>import 000 from 000</code> 형식으로 import 해온다. 또 node.js 나 자바스크립트 같은것에서는 모듈을 export 해야한다.</p>
+<br>
+<p>Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 시작하면 된다.</p>
+<p>또 import 받는 쪽에서도 첫글자가 대문자로 인식된다.</p>
+<p>그러니까 첫글자가 대문자인 function 들은 다른곳에서 import 된거라고 보면 된다.</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-11-07</span>
+                <span>Updated on 2020-11-11</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/go-introduction/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/packagesandimports/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
                 <span></span>
@@ -154,8 +168,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/first/" class="prev" rel="prev" title="First.md"><i class="fas fa-angle-left fa-fw"></i>First.md</a>
-            <a href="/go-installation/" class="next" rel="next" title="Installation">Installation<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/go-helloworld/" class="prev" rel="prev" title="Hello World"><i class="fas fa-angle-left fa-fw"></i>Hello World</a>
+            <a href="/variableandconstants/" class="next" rel="next" title="Variable and Constants">Variable and Constants<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.

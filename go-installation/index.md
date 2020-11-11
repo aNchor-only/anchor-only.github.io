@@ -1,4 +1,4 @@
-# Go Installation
+# Installation
 
 
 
@@ -35,16 +35,6 @@ https://www.archlinux.org/packages/community/x86_64/go/
 {{< /admonition >}}
 
 
-
-맥이나 윈도우는
-
- ![download](C:\hugo\content\posts\img\downloads.png))
-
-
-
-여기서 클릭해서 다운
-
-<br>
 
 맥은
 
@@ -83,15 +73,7 @@ https://medium.com/@jimkang/install-go-on-mac-with-homebrew-5fa421fc55f5
 
 <br>
 
-윈도우
-
-![environmentvariable](C:\hugo\content\posts\img\windowsenvironmentsvariable.png)
-
-![variables](C:\hugo\content\posts\img\variables.png)
-
-![gopath](C:\hugo\content\posts\img\gopath.png)
-
-Path 에 Go 를 설치한 폴더가 들어있으면 된다.
+윈도우는 Path 에 Go 를 설치한 폴더가 들어있으면 된다.
 
 
 

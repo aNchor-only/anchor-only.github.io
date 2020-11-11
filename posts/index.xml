@@ -4,8 +4,36 @@
         <link>/posts/</link>
         <description>All Posts | aNchor</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>anchor-only@outlook.kr (anchor)</managingEditor>
-            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Sat, 07 Nov 2020 22:18:51 &#43;0900</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Go Installation</title>
+            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Wed, 11 Nov 2020 12:26:32 &#43;0900</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Variable and Constants</title>
+    <link>/variableandconstants/</link>
+    <pubDate>Wed, 11 Nov 2020 12:26:32 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>/variableandconstants/</guid>
+    <description><![CDATA[영상    ]]></description>
+</item><item>
+    <title>Packages and Imports</title>
+    <link>/packagesandimports/</link>
+    <pubDate>Wed, 11 Nov 2020 11:57:06 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>/packagesandimports/</guid>
+    <description><![CDATA[영상   패키지 main.go 에서 Hello World 를 출력할 때 fmt.Println 으로 출력했었다. fmt 는 format 을 위한 패키지다. 그런데 왜 Println 은 첫글자가 대문자일까?
+Import 파이썬, 자바, 자바스크립트 등에서는 무언가를 import 할때 맨 위에
+import 000 from 000 형식으로 import 해온다. 또 node.js 나 자바스크립트 같은것에서는 모듈을 export 해야한다.
+Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 시작하면 된다.
+또 import 받는 쪽에서도 첫글자가 대문자로 인식된다.
+그러니까 첫글자가 대문자인 function 들은 다른곳에서 import 된거라고 보면 된다.]]></description>
+</item><item>
+    <title>Hello World</title>
+    <link>/go-helloworld/</link>
+    <pubDate>Wed, 11 Nov 2020 11:37:42 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>/go-helloworld/</guid>
+    <description><![CDATA[영상   main.go 를 만들었다.
+중요go 프로젝트를 컴파일 하고 싶다면 파일 이름을 main.go 로 해야한다. example.go 같은 경우에는 컴파일이 되지 않는다. main.go 의 맨 윗줄에 package main 이라고 작성한다. Go 에서는 어떤 패키지를 사용하는지 알려주어야 한다. 또 Node.js 나 Python 과 달리 특정한 function 을 찾는다.
+1 2 3 4 5  package main func main() { }   Hello World Hello World 를 프린트해보자.]]></description>
+</item><item>
+    <title>Installation</title>
     <link>/go-installation/</link>
     <pubDate>Sat, 07 Nov 2020 22:18:51 &#43;0900</pubDate>
     <author>Author</author>
@@ -13,17 +41,14 @@
     <description><![CDATA[영상   Go 다운받기 https://golang.org/
 로 접속한다.
 리눅스라면
-1 2 3 4  sudo apt install go sudo dnf install go yay -S go sudo pacman -S go   aur 주소https://www.archlinux.org/packages/community/x86_64/go/ 맥이나 윈도우는
-)
-여기서 클릭해서 다운
-맥은
+1 2 3 4  sudo apt install go sudo dnf install go yay -S go sudo pacman -S go   aur 주소https://www.archlinux.org/packages/community/x86_64/go/ 맥은
 1  brew install golang   하면 될거고
 윈도우는
 1  choco install go   하면 될듯
 환경변수 추가 맥
 1 2 3 4  mkdir -p $HOME/go/{bin,src,pkg} export GOPATH=$HOME/go export GOROOT=&#34;$(brew --prefix golang)/libexec&#34; export PATH=&#34;$PATH:${GOPATH}/bin:${GOROOT}/bin&#34;   https://medium.]]></description>
 </item><item>
-    <title>Go Introduction</title>
+    <title>Introduction</title>
     <link>/go-introduction/</link>
     <pubDate>Sat, 07 Nov 2020 22:11:13 &#43;0900</pubDate>
     <author>Author</author>

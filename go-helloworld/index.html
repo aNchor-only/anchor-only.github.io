@@ -5,46 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Installation - aNchor</title><meta name="Description" content="나 혼자 보는 개인 사이트"><meta property="og:title" content="Installation" />
-<meta property="og:description" content="영상   Go 다운받기 https://golang.org/
-로 접속한다.
-리눅스라면
-1 2 3 4  sudo apt install go sudo dnf install go yay -S go sudo pacman -S go   aur 주소https://www.archlinux.org/packages/community/x86_64/go/ 맥은
-1  brew install golang   하면 될거고
-윈도우는
-1  choco install go   하면 될듯
-환경변수 추가 맥
-1 2 3 4  mkdir -p $HOME/go/{bin,src,pkg} export GOPATH=$HOME/go export GOROOT=&#34;$(brew --prefix golang)/libexec&#34; export PATH=&#34;$PATH:${GOPATH}/bin:${GOROOT}/bin&#34;   https://medium." />
+        <title>Hello World - aNchor</title><meta name="Description" content="나 혼자 보는 개인 사이트"><meta property="og:title" content="Hello World" />
+<meta property="og:description" content="영상   main.go 를 만들었다.
+중요go 프로젝트를 컴파일 하고 싶다면 파일 이름을 main.go 로 해야한다. example.go 같은 경우에는 컴파일이 되지 않는다. main.go 의 맨 윗줄에 package main 이라고 작성한다. Go 에서는 어떤 패키지를 사용하는지 알려주어야 한다. 또 Node.js 나 Python 과 달리 특정한 function 을 찾는다.
+1 2 3 4 5  package main func main() { }   Hello World Hello World 를 프린트해보자." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/go-installation/" />
+<meta property="og:url" content="/go-helloworld/" />
 <meta property="og:image" content="/"/>
-<meta property="article:published_time" content="2020-11-07T22:18:51+09:00" />
-<meta property="article:modified_time" content="2020-11-07T22:18:51+09:00" />
+<meta property="article:published_time" content="2020-11-11T11:37:42+09:00" />
+<meta property="article:modified_time" content="2020-11-11T11:37:42+09:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/"/>
 
-<meta name="twitter:title" content="Installation"/>
-<meta name="twitter:description" content="영상   Go 다운받기 https://golang.org/
-로 접속한다.
-리눅스라면
-1 2 3 4  sudo apt install go sudo dnf install go yay -S go sudo pacman -S go   aur 주소https://www.archlinux.org/packages/community/x86_64/go/ 맥은
-1  brew install golang   하면 될거고
-윈도우는
-1  choco install go   하면 될듯
-환경변수 추가 맥
-1 2 3 4  mkdir -p $HOME/go/{bin,src,pkg} export GOPATH=$HOME/go export GOROOT=&#34;$(brew --prefix golang)/libexec&#34; export PATH=&#34;$PATH:${GOPATH}/bin:${GOROOT}/bin&#34;   https://medium."/>
+<meta name="twitter:title" content="Hello World"/>
+<meta name="twitter:description" content="영상   main.go 를 만들었다.
+중요go 프로젝트를 컴파일 하고 싶다면 파일 이름을 main.go 로 해야한다. example.go 같은 경우에는 컴파일이 되지 않는다. main.go 의 맨 윗줄에 package main 이라고 작성한다. Go 에서는 어떤 패키지를 사용하는지 알려주어야 한다. 또 Node.js 나 Python 과 달리 특정한 function 을 찾는다.
+1 2 3 4 5  package main func main() { }   Hello World Hello World 를 프린트해보자."/>
 <meta name="application-name" content="LoveIt">
-<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/go-installation/" /><link rel="prev" href="/go-introduction/" /><link rel="next" href="/go-helloworld/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="canonical" href="/go-helloworld/" /><link rel="prev" href="/go-installation/" /><link rel="next" href="/packagesandimports/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Installation",
+        "headline": "Hello World",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/go-installation\/"
-        },"genre": "posts","wordcount":  166 ,
-        "url": "\/go-installation\/","datePublished": "2020-11-07T22:18:51+09:00","dateModified": "2020-11-07T22:18:51+09:00","publisher": {
+            "@id": "\/go-helloworld\/"
+        },"genre": "posts","wordcount":  112 ,
+        "url": "\/go-helloworld\/","datePublished": "2020-11-11T11:37:42+09:00","dateModified": "2020-11-11T11:37:42+09:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -118,9 +106,9 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Installation</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Hello World</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/aNchor-only" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>anchor</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-07">2020-11-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;166 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-11">2020-11-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;112 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -130,105 +118,88 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#영상">영상</a></li>
-    <li><a href="#go-다운받기">Go 다운받기</a></li>
-    <li><a href="#환경변수-추가">환경변수 추가</a></li>
+    <li><a href="#hello-world">Hello World</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="영상">영상</h2>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube-nocookie.com/embed/ic89gBxdHgs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/p4cVTw_f3-k" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<h2 id="go-다운받기">Go 다운받기</h2>
-<p><a href="https://golang.org/" target="_blank" rel="noopener noreffer">https://golang.org/</a></p>
-<p>로 접속한다.</p>
-<br>
-<p>리눅스라면</p>
+<p>main.go 를 만들었다.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>중요<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">go 프로젝트를 컴파일 하고 싶다면 파일 이름을 main.go 로 해야한다. example.go 같은 경우에는 컴파일이 되지 않는다.</div>
+        </div>
+    </div>
+<p>main.go 의 맨 윗줄에 <code>package main</code> 이라고 작성한다. Go 에서는 어떤 패키지를 사용하는지 알려주어야 한다. 또 Node.js 나 Python 과 달리 특정한 function 을 찾는다.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt install go
-sudo dnf install go
-yay -S go
-sudo pacman -S go
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><div class="details admonition tip">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-lightbulb fa-fw"></i>aur 주소<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><a href="https://www.archlinux.org/packages/community/x86_64/go/">https://www.archlinux.org/packages/community/x86_64/go/</a></div>
-        </div>
-    </div>
-<p>맥은</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">brew install golang
-</code></pre></td></tr></table>
-</div>
-</div><p>하면 될거고</p>
-<br>
-<p>윈도우는</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">choco install go
-</code></pre></td></tr></table>
-</div>
-</div><p>하면 될듯</p>
-<h2 id="환경변수-추가">환경변수 추가</h2>
-<p>맥</p>
+</div><h2 id="hello-world">Hello World</h2>
+<p>Hello World 를 프린트해보자.</p>
+<p>function 안에 <code>fmt.Println('Hello World!')</code>를 쓴 뒤 package 뒤에</p>
+<p>import &ldquo;fmt&rdquo; 를 쓴다. fmt 가 뭔지는 다음에.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">mkdir -p $HOME/go/{bin,src,pkg}
-export GOPATH=$HOME/go
-export GOROOT=&#34;$(brew --prefix golang)/libexec&#34;
-export PATH=&#34;$PATH:${GOPATH}/bin:${GOROOT}/bin&#34;
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
+
+<span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><a href="https://medium.com/@jimkang/install-go-on-mac-with-homebrew-5fa421fc55f5">https://medium.com/@jimkang/install-go-on-mac-with-homebrew-5fa421fc55f5</a></p>
-<br>
-<p>윈도우는 Path 에 Go 를 설치한 폴더가 들어있으면 된다.</p>
-<div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Go 는 Go 의 Path 가 설치된 곳에서만 작동한다. 원하는 곳에 폴더를 만들어서 작업할 수 없다는 소리다. 자동적으로 생성되는 Go Path 디렉토리는 C:\Go 지만 환경변수를 수정해 D 드라이브로 바꿨다. 그래서 C:\Go 안의 특정 폴더 안에서 작업을 해야 한다.</div>
-        </div>
-    </div>
-<p>Go 는 Node.js 나 Python 같이 모듈이나 패키지를 다운받을 수 있는곳이 제한적이다. npm 이나 pypi 등등. Go 는 그런거 없다. 그렇기 때문에 코드를 다운받을, 업로드 할 도메인으로 깔끔하게 정리한다.</p>
-<br>
-<p>src 안에 자신의 깃허브 주소로 디렉터리를 만들고 프로젝트 이름으로 디렉터리를 만든다. 그리고 그 안에 main.go 를 생성하고 vscode 로 열면 install 같은게 많이 나올텐데 모두 하면 된다.</p>
+</div><p><code>go run main.go</code> 로 작동시켜보면</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">PS </span><span class="n">C:</span><span class="p">\</span><span class="n">Go</span><span class="p">\</span><span class="n">PJCT</span><span class="p">&gt;</span> <span class="n">go</span> <span class="n">run</span> <span class="n">main</span><span class="p">.</span><span class="n">go</span>
+<span class="n">Hello</span> <span class="n">World</span><span class="p">!</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>잘 작동한다!</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2020-11-07</span>
+                <span>Updated on 2020-11-11</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/go-installation/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/go-helloworld/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
                 <span></span>
@@ -243,8 +214,8 @@ export PATH=&#34;$PATH:${GOPATH}/bin:${GOROOT}/bin&#34;
         </section>
     </div>
 
-    <div class="post-nav"><a href="/go-introduction/" class="prev" rel="prev" title="Introduction"><i class="fas fa-angle-left fa-fw"></i>Introduction</a>
-            <a href="/go-helloworld/" class="next" rel="next" title="Hello World">Hello World<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/go-installation/" class="prev" rel="prev" title="Installation"><i class="fas fa-angle-left fa-fw"></i>Installation</a>
+            <a href="/packagesandimports/" class="next" rel="next" title="Packages and Imports">Packages and Imports<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="utterances"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
