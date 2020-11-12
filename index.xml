@@ -4,21 +4,34 @@
         <link>/</link>
         <description>나 혼자 보는 개인 사이트</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>anchor-only@outlook.kr (anchor)</managingEditor>
-            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Wed, 11 Nov 2020 12:26:32 &#43;0900</lastBuildDate>
+            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Thu, 12 Nov 2020 11:37:13 &#43;0900</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Variable and Constants</title>
-    <link>/variableandconstants/</link>
+    <title></title>
+    <link>/archinstall/</link>
+    <pubDate>Thu, 12 Nov 2020 11:37:13 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>/archinstall/</guid>
+    <description><![CDATA[info 나 혼자 보려고 만들었다.
+부팅 USB 만들기 lanet 에 접속해서 최신 iso 를 다운받는다
+Note젠투 같은 다른 리눅스의 iso 도 있다 들어가보면 archlinux-2020.11.01-x86_64.iso 같이 생긴게 있을텐데 클릭해서 다운받는다. 아치리눅스의 iso 파일은 그렇게 무겁지 않다.
+https://www.balena.io/etcher/
+에 접속해서 Balena Etcher 을 다운받는다. 모든 OS 에서 돌아가는 프로그램이다. 물건이네 이거
+파일을 눌러 실행시키자. 이때 주의점은 관리자로 실행시켜야 한다 라는 것이다.
+관리자로 실행시켰으면 iso 와 부팅 usb 가 될 디스크를 선택하고 Flash 를 누른다.]]></description>
+</item><item>
+    <title>Go Variable and Constants</title>
+    <link>/go-variableandconstants/</link>
     <pubDate>Wed, 11 Nov 2020 12:26:32 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>/variableandconstants/</guid>
+    <guid>/go-variableandconstants/</guid>
     <description><![CDATA[영상    ]]></description>
 </item><item>
-    <title>Packages and Imports</title>
-    <link>/packagesandimports/</link>
+    <title>Go Packages and Imports</title>
+    <link>/go-packagesandimports/</link>
     <pubDate>Wed, 11 Nov 2020 11:57:06 &#43;0900</pubDate>
     <author>Author</author>
-    <guid>/packagesandimports/</guid>
+    <guid>/go-packagesandimports/</guid>
     <description><![CDATA[영상   패키지 main.go 에서 Hello World 를 출력할 때 fmt.Println 으로 출력했었다. fmt 는 format 을 위한 패키지다. 그런데 왜 Println 은 첫글자가 대문자일까?
 Import 파이썬, 자바, 자바스크립트 등에서는 무언가를 import 할때 맨 위에
 import 000 from 000 형식으로 import 해온다. 또 node.js 나 자바스크립트 같은것에서는 모듈을 export 해야한다.
@@ -26,7 +39,7 @@ Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 
 또 import 받는 쪽에서도 첫글자가 대문자로 인식된다.
 그러니까 첫글자가 대문자인 function 들은 다른곳에서 import 된거라고 보면 된다.]]></description>
 </item><item>
-    <title>Hello World</title>
+    <title>Go Hello World</title>
     <link>/go-helloworld/</link>
     <pubDate>Wed, 11 Nov 2020 11:37:42 &#43;0900</pubDate>
     <author>Author</author>
@@ -35,7 +48,7 @@ Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 
 중요go 프로젝트를 컴파일 하고 싶다면 파일 이름을 main.go 로 해야한다. example.go 같은 경우에는 컴파일이 되지 않는다. main.go 의 맨 윗줄에 package main 이라고 작성한다. Go 에서는 어떤 패키지를 사용하는지 알려주어야 한다. 또 Node.js 나 Python 과 달리 특정한 function 을 찾는다.
 1 2 3 4 5  package main func main() { }   Hello World Hello World 를 프린트해보자.]]></description>
 </item><item>
-    <title>Installation</title>
+    <title>Go Installation</title>
     <link>/go-installation/</link>
     <pubDate>Sat, 07 Nov 2020 22:18:51 &#43;0900</pubDate>
     <author>Author</author>
@@ -50,7 +63,7 @@ Go 에서는, function을 export 해주고 싶다면, function 을 대문자로 
 환경변수 추가 맥
 1 2 3 4  mkdir -p $HOME/go/{bin,src,pkg} export GOPATH=$HOME/go export GOROOT=&#34;$(brew --prefix golang)/libexec&#34; export PATH=&#34;$PATH:${GOPATH}/bin:${GOROOT}/bin&#34;   https://medium.]]></description>
 </item><item>
-    <title>Introduction</title>
+    <title>Go Introduction</title>
     <link>/go-introduction/</link>
     <pubDate>Sat, 07 Nov 2020 22:11:13 &#43;0900</pubDate>
     <author>Author</author>
