@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title> - aNchor</title><meta name="Description" content="나 혼자 보는 개인 사이트"><meta property="og:title" content="" />
+        <title>Archinstall - aNchor</title><meta name="Description" content="나 혼자 보는 개인 사이트"><meta property="og:title" content="Archinstall" />
 <meta property="og:description" content="info 나 혼자 보려고 만들었다.
 부팅 USB 만들기 lanet 에 접속해서 최신 iso 를 다운받는다
 Note젠투 같은 다른 리눅스의 iso 도 있다 들어가보면 archlinux-2020.11.01-x86_64.iso 같이 생긴게 있을텐데 클릭해서 다운받는다. 아치리눅스의 iso 파일은 그렇게 무겁지 않다.
@@ -21,7 +21,7 @@ https://www.balena.io/etcher/
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/"/>
 
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Archinstall"/>
 <meta name="twitter:description" content="info 나 혼자 보려고 만들었다.
 부팅 USB 만들기 lanet 에 접속해서 최신 iso 를 다운받는다
 Note젠투 같은 다른 리눅스의 iso 도 있다 들어가보면 archlinux-2020.11.01-x86_64.iso 같이 생긴게 있을텐데 클릭해서 다운받는다. 아치리눅스의 iso 파일은 그렇게 무겁지 않다.
@@ -34,7 +34,7 @@ https://www.balena.io/etcher/
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "",
+        "headline": "Archinstall",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -114,7 +114,7 @@ https://www.balena.io/etcher/
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX"></h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Archinstall</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/aNchor-only" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>anchor</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-12">2020-11-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;695 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
@@ -163,20 +163,20 @@ https://www.balena.io/etcher/
 <p>에 접속해서 Balena Etcher 을 다운받는다. 모든 OS 에서 돌아가는 프로그램이다. <del>물건이네 이거</del></p>
 <br>
 <p>파일을 눌러 실행시키자. 이때 주의점은 <strong>관리자로 실행시켜야 한다</strong> 라는 것이다.</p>
-<p><img src="./img/arch/etcher.png" /></p>
+<p><img src="../posts/img/arch/etcher.png" /></p>
 <p>관리자로 실행시켰으면 iso 와 부팅 usb 가 될 디스크를 선택하고 Flash 를 누른다.</p>
 <p><strong>Flash 를 누르면 usb 안의 모든 데이터가 없어진다. 새로 산 usb 나 쓸모 없는 usb, 아니면 내용물을 백업해놓고 진행한다.</strong></p>
-<p><img src="./img/arch/etcher-usb.png" /></p>
+<p><img src="../posts/img/arch/etcher-usb.png" /></p>
 <p>그렇게 기다리다 보면 끝나있을것이다.</p>
-<p><img src="./img/arch/flashcomplete.png" /></p>
+<p><img src="../posts/img/arch/flashcomplete.png" /></p>
 <p>부팅 USB 를 만들었다!</p>
 <h2 id="usb-를-uefi-로-부팅">USB 를 UEFI 로 부팅</h2>
 <p>UEFI로 부팅을 해야 한다. 바이오스로 들어가야 하는데 컴퓨터마다 다르다. 보통 F2나 Delete 키다. 전원버튼 누르고 연타하다 보면 바이오스가 나올것이다. 거기서 USB 를 맨 위로 올려주면 된다. TUI 일 경우에는 + 와 - 로 올려주고, GUI 일 경우에는 마우스로 드래그하면 된다. UEFI 를 켜는 방법은 기기마다 다르니 구글링 ㄱㄱ. 잘 찾아보면 Enable EFI 같이 생긴게 있을것이다. 그리고 저장하고 나가기 (보통 F10 이다) 를 누르면 USB 로 부팅되는것을 볼 수 있다.</p>
-<p><img src="./img/arch/efiboot.png" /></p>
+<p><img src="../posts/img/arch/efiboot.png" /></p>
 <p>이런식으로 나오면 UEFI 로 부팅된게 맞다.</p>
-<p><img src="./img/arch/safeboot.png" /></p>
+<p><img src="../posts/img/arch/safeboot.png" /></p>
 <p>(스샷을 위해 가상머신에서 부팅중)</p>
-<p><img src="./img/arch/safe!!.png" /></p>
+<p><img src="../posts/img/arch/safe!!.png" /></p>
 <p>이제 준비 되었다! 제대로 깔아보자</p>
 <h2 id="파티션-설정">파티션 설정</h2>
 <p><code>lsblk</code>로 파티션을 볼 수 있다. 깔고 싶은 파티션을 정한 뒤</p>
@@ -189,17 +189,17 @@ https://www.balena.io/etcher/
 </code></pre></td></tr></table>
 </div>
 </div><p>loop0 이나 sdb, rom b 같은건 건드리지 말자. 램이나 usb 면 난리난다. nvme0n1 같은 식이어도 설치 할 수 있다.</p>
-<p><img src="./img/arch/lsblk.png" /></p>
+<p><img src="../posts/img/arch/lsblk.png" /></p>
 <p><code>cfdisk /dev/sda</code></p>
 <p>맨 위에 GPT 라고 나와 있어야한다. 물어보면 GPT나 Primary 를 선택한다. 있는건 전부 delete 키로 지워서 Free Space 만 남게 한다.</p>
 <p>방향키로 아래 메뉴를 움직일 수 있다. new 에서 엔터, 1G 를 치고 엔터, 4G 를 치고 엔터, 그리고 그대로 엔터 친다.</p>
 <p>그럼 대충</p>
-<p><img src="./img/arch/cfdisk.png" /></p>
+<p><img src="../posts/img/arch/cfdisk.png" /></p>
 <p>이런 모양이 나왔을것이다. 아래에서 Type 으로 위에서부터 EFI System, Linux Swap, Linux Filesystem 을 선택한다.</p>
-<p><img src=./img/arch/selectefi.png /></p>
+<p><img src=../posts/img/arch/selectefi.png /></p>
 <p>없다면 MBR 인것이다.</p>
 <p>다 하고 나면 대충</p>
-<p><img src="./img/arch/efiswapfile.png" /></p>
+<p><img src="../posts/img/arch/efiswapfile.png" /></p>
 <p>이런 모양이 되었을것이다. 그 상태로 Write 에 가서 엔터, yes 를 치고 q 로 나온다. <strong>되돌릴 수 없다</strong></p>
 <br>
 <p>이제 파티션 설정은 끝났다. 다시 lsblk 로 확인해보자. 맞지 않다면 cfdisk 를 다시 해보고 그래도 안되면 재부팅 해야한다.</p>
@@ -214,7 +214,7 @@ https://www.balena.io/etcher/
 mkfs.ext4 -j /dev/파일시스템 위치
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="./img/arch/vfatandext4.png" /></p>
+</div><p><img src="../posts/img/arch/vfatandext4.png" /></p>
 <p>이렇게 나오면 된다.</p>
 <h2 id="마운트">마운트</h2>
 <div class="highlight"><div class="chroma">
@@ -281,7 +281,7 @@ station wlan0 connect <span class="s2">&#34;와이파이 이름&#34;</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>으로 패키지들을 다운받는다. 따로 다운받고 싶으면 뒤에 이름을 붙이면 된다.</p>
-<p><img src="./img/arch/pacstrap.png" /></p>
+<p><img src="../posts/img/arch/pacstrap.png" /></p>
 <h2 id="genfstab">genfstab</h2>
 <blockquote>
 <p>genfstab : <strong>gen</strong>erate <strong>F</strong>ile <strong>S</strong>ystem <strong>tab</strong>le</p>
