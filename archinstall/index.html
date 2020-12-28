@@ -39,7 +39,7 @@ https://www.balena.io/etcher/
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/archinstall\/"
-        },"genre": "posts","wordcount":  695 ,
+        },"genre": "posts","wordcount":  699 ,
         "url": "\/archinstall\/","datePublished": "2020-11-12T11:37:13+09:00","dateModified": "2020-11-12T11:37:13+09:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -116,7 +116,7 @@ https://www.balena.io/etcher/
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Archinstall</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://github.com/aNchor-only" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>anchor</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-12">2020-11-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;695 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-11-12">2020-11-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;699 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -190,7 +190,7 @@ https://www.balena.io/etcher/
 </div>
 </div><p>loop0 이나 sdb, rom b 같은건 건드리지 말자. 램이나 usb 면 난리난다. nvme0n1 같은 식이어도 설치 할 수 있다.</p>
 <p><img src="../posts/img/arch/lsblk.png" /></p>
-<p><code>cfdisk /dev/sda</code></p>
+<p><code>cfdisk /dev/EFI 시스템 위치</code></p>
 <p>맨 위에 GPT 라고 나와 있어야한다. 물어보면 GPT나 Primary 를 선택한다. 있는건 전부 delete 키로 지워서 Free Space 만 남게 한다.</p>
 <p>방향키로 아래 메뉴를 움직일 수 있다. new 에서 엔터, 1G 를 치고 엔터, 4G 를 치고 엔터, 그리고 그대로 엔터 친다.</p>
 <p>그럼 대충</p>
@@ -419,9 +419,9 @@ initrd /initramfs-linux.img
 </code></pre></td></tr></table>
 </div>
 </div><p>가 되게 만든다.</p>
-<p><code>echo &quot;options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/sda3) rw&quot;&gt;&gt; /boot/loader/entries/arch.conf </code></p>
+<p><code>echo &quot;options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/파일 시스템 위치) rw&quot;&gt;&gt; /boot/loader/entries/arch.conf </code></p>
 <p>하고</p>
-<p><code>cat /boot/loader/entries/</code></p>
+<p><code>cat /boot/loader/entries/arch.conf</code></p>
 <p>로 확인해보면</p>
 <p>맨 아랫줄에</p>
 <p><code>options root-PARTUUID=아이디 rw</code></p>

@@ -69,7 +69,7 @@ loop0 이나 sdb, rom b 같은건 건드리지 말자. 램이나 usb 면 난리�
 
 <img src="../posts/img/arch/lsblk.png" />
 
-`cfdisk /dev/sda`
+`cfdisk /dev/EFI 시스템 위치`
 
 맨 위에 GPT 라고 나와 있어야한다. 물어보면 GPT나 Primary 를 선택한다. 있는건 전부 delete 키로 지워서 Free Space 만 남게 한다.
 
@@ -264,11 +264,11 @@ initrd /initramfs-linux.img
 
 가 되게 만든다.
 
-`echo "options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/sda3) rw">> /boot/loader/entries/arch.conf `
+`echo "options root=PARTUUID=$(blkid -s PARTUUID -o value /dev/파일 시스템 위치) rw">> /boot/loader/entries/arch.conf `
 
 하고
 
-`cat /boot/loader/entries/`
+`cat /boot/loader/entries/arch.conf`
 
 로 확인해보면
 
