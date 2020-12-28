@@ -2,9 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/</loc><lastmod>2020-11-12T11:37:13&#43;09:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
+            <loc>/</loc><lastmod>2020-12-28T10:33:12&#43;09:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>/learningcsharp/</loc><lastmod>2020-12-28T10:33:12&#43;09:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
+            <loc>/posts/</loc><lastmod>2020-12-28T10:33:12&#43;09:00</lastmod><changefreq>daily</changefreq><priority>1</priority></url><url>
             <loc>/archinstall/</loc><lastmod>2020-11-12T11:37:13&#43;09:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
-            <loc>/posts/</loc><lastmod>2020-11-12T11:37:13&#43;09:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>/go-packagesandimports/</loc><lastmod>2020-11-11T11:57:06&#43;09:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>/go-helloworld/</loc><lastmod>2020-11-11T11:37:42&#43;09:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>
             <loc>/about/</loc><lastmod>2020-11-09T13:50:26&#43;09:00</lastmod><changefreq>daily</changefreq><priority>0.5</priority></url><url>

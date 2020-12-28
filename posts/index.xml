@@ -4,7 +4,15 @@
         <link>/posts/</link>
         <description>All Posts | aNchor</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>anchor-only@outlook.kr (anchor)</managingEditor>
-            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Thu, 12 Nov 2020 11:37:13 &#43;0900</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>anchor-only@outlook.kr (anchor)</webMaster><lastBuildDate>Mon, 28 Dec 2020 10:33:12 &#43;0900</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>C#배우는중</title>
+    <link>/learningcsharp/</link>
+    <pubDate>Mon, 28 Dec 2020 10:33:12 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>/learningcsharp/</guid>
+    <description><![CDATA[C# 배우는중이다
+]]></description>
+</item><item>
     <title>Archinstall</title>
     <link>/archinstall/</link>
     <pubDate>Thu, 12 Nov 2020 11:37:13 &#43;0900</pubDate>
